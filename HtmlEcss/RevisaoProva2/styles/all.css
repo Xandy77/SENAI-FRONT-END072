@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Roboto; "Arial"; 
+}
+
+
+:root{
+    --corPrimaria: #ba2d2d;
+    --corSecundaria: #f2511b;
+    --corLaranja: #f2861b;
+    --corLaranja: #f2861b;
+    --corLaranjaTransparencia: #f2871b8a;
+    --corAmarela: #c7c730;
+    --corPreto: #302727;
+    --fontePrimaria: Roboto ;
+    --fonteSecundaria: SUSE ;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: SUSE, 'Trebuchet MS';
+}
+
+header, footer{
+    width: 100%;
+    background-color: var(--corPrimaria);
+    color: white;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    display: flex;
+    align-items: center; <!-- vertical -->
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+}
+
+section{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#banner{
+    height: 400px;
+    overflow-y: hidden;
+    align-items: start;
+    
+    /*background-image: url(../images/AtividadeBanco/AtividadeBanco/images/banner.jpg);
+    background-size: cover; 
+    background-repeat: repeat;
+    background-position: center; */
+}
+
+#mensagem{
+    position: absolute;
+    top: 200px;
+    width: 40%;
+    background-color: var(--corLaranjaTransparencia);
+
+}
+
+#banner img{
+    width: 100%;
+}
+
+#btnHeader{
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+}
+
+.agrupamento{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black 1px solid;
+}
+
+@media screen and (max-width: 600px){
+    .agrupamento{
+        flex-direction: column;
+        align-items: center;
+    }
+}

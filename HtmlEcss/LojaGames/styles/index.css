@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Roboto, "Arial";
+}
+
+:root{
+    --corPrimaria: red;
+    --corSecundaria: Verde;
+    --corLaranja: #f2861b;
+    --corAmarela: #c7c730;
+    --corPreto: #302727;
+    --fontPrimaria: Roboto;
+    --fontSecundaria: SUSE;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Trebuchet MS';
+}
+
+header, footer{
+    width: 100%;
+    background-color: var(--corPreto);
+    color: white;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{ 
+    background-color: var(--corAmarela);
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+}
+
+section{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner{
+    height: 400px;
+    /*overflow: hidden;
+    align-items: start;*/
+
+    background-image: url(../images/Uncharted_4_capa.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+#mensagem{
+    position: absolute;
+    top: 200px;
+    width: 40%;
+    background-color: var(--corLaranja);
+}
+
+#banner img{
+    width: 100%;
+}
+
+#btnHeader{
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+}
+
+
+
