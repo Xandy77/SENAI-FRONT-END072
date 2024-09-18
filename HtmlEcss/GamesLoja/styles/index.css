@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Trebuchet MS';
 }
 
 :root {
     --corPrimaria: red;
-    --corSecundaria: verde;
+    --corSecundaria: #fff;
     --corLaranja: #f2861b;
     --corAmarela: #c7c730;
     --corPreto: #302727;
@@ -16,18 +16,26 @@ header {
     width: 100%;
     background-color: var(--corPreto);
     color: white;
-    padding: 20px 0;
+    padding: 20px 10px 10px 10px;
     display: flex;
+    text-decoration: none;
     justify-content: space-between;
     align-items: center;
 }
 
 nav {
-    display: flex;
+    display: flex;    
     align-items: center;
 }
 
-#MenuEsquerdo ul {
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 15px; 
+}
+
+#MenuEsquerdo {
     display: flex;
     list-style: none;
     gap: 20px;
@@ -36,11 +44,11 @@ nav {
 #MenuEsquerdo a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 500px;
 }
 
 #MenuEsquerdo a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #MenuDireito {
@@ -52,9 +60,9 @@ nav {
     background-color: var(--corLaranja);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px 10px 10px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 500px;
 }
 
 #MenuDireito button:hover {
@@ -74,8 +82,8 @@ main {
 }
 
 #banner {
-    height: 400px;
-    background-image: url(../images/Uncharted_4_capa.png);
+    height: fixed;
+    background-image: url(../images/Imagem\ Games.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -93,11 +101,11 @@ main {
 }
 
 #banner h4 {
-    font-size: 2rem;
+    font-size: 30px;
 }
 
 #banner p {
-    font-size: 1.2rem;
+    font-size: 20px;
 }
 
 button[type="button"] {
@@ -106,7 +114,7 @@ button[type="button"] {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
     font-weight: 500;
 }
 
@@ -115,24 +123,29 @@ button[type="button"]:hover {
 }
 
 #cadastro, #login, #catalogo {
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh;  
+    padding: 20px;   
 }
 
 #cadastro form, #login form {
     max-width: 400px;
-    margin: auto;
+    margin: 0; 
     display: flex;
     flex-direction: column;
+    align-items: baseline;
 }
 
 label {
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 input {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+    padding: 10px;
+    margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -143,14 +156,15 @@ input:focus {
 }
 
 button[type="submit"] {
-    padding: 0.75rem;
+    padding: 15px;
     background-color: var(--corPrimaria);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: 500;
-    margin-top: 1rem;
+    margin-top: 20px;
+    margin-right: 15px; 
 }
 
 button[type="submit"]:hover {
@@ -160,14 +174,14 @@ button[type="submit"]:hover {
 .catalogo {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 10px;
     justify-content: center;
 }
 
 .produto {
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 1rem;
+    padding: 10px;
     text-align: center;
     width: 200px;
 }
