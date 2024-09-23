@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura total da viewport */
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Fonte opcional */
+}
+
+.container {
+    text-align: center; /* Centraliza o texto dentro da div */
+    border: 1px solid #ccc; /* Borda opcional */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    background-color: #f9f9f9; /* Cor de fundo */
+}
+
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os botões */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+button {
+    padding: 10px 15px; /* Tamanho dos botões */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Cantos arredondados nos botões */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
