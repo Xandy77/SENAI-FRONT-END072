@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primaria: rgb(0, 132, 255);
+    --branco: rgb(221, 221, 221);
+    --preto: rgb(51, 51, 51);
+    --pretoTransparent: rgba(29, 29, 29, 0.74);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: relative;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+.welcome-message {
+    margin-top: 20px; /* Espaço acima da mensagem */
+    padding: 10px 15px; 
+    font-weight: bold; /* Negrito */
+    color: var(--branco); 
+    background-color: var(--primaria); /* Fundo azul */
+    border: none; 
+    position: absolute; /* Fixa a posição */
+    top: 30%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza */
+    z-index: 1; /* Garante que fique acima da imagem */
+}
+
+.bi-arrow-down {
+    display: block; /* Para garantir que o ícone fique em uma nova linha */
+    margin: 80px auto; /* Espaço acima e centralização */
+    background-color: var(--primaria);
+    width: 15px; /* Tamanho do ícone */
+    height: 15px; /* Tamanho do ícone */
+    position: absolute; /* Para posicionar abaixo da mensagem */
+    top: calc(50% + 40px); /* Ajusta a posição em relação à mensagem */
+    left: 50%; 
+    transform: translateX(-50%); /* Centraliza */
+    z-index: 1; /* Garante que fique acima da imagem */
+    border: 2px solid var(--branco); /* Borda branca */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background-color 0.3s, border-color 0.3s; /* Efeito de transição */
+}
+
+.bi-arrow-down:hover {
+    background-color: var(--branco); /* Muda para branco ao passar o mouse */
+    border-color: var(--primaria); /* Muda a cor da borda ao passar o mouse */
+    color: var(--preto); /* Altera a cor do ícone ao passar o mouse */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute; /* Fixa a posição no topo */
+    top: 0; /* Coloca no topo da imagem */
+    left: 50%; 
+    transform: translateX(-50%); /* Centraliza */
+    width: 100%; 
+}
+
+.nav-left, .nav-right {
+    display: flex;
+}
+
+.transparent-btn {
+    margin: 5px; 
+    padding: 10px 15px; 
+    color: var(--branco);
+    background-color: Transparent; /* Fundo transparente */
+    border: none; /* Sem bordas */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-btn img {
+    width: 20px; 
+}
+
+.transparent-btn:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+}
