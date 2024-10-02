@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../Downloads/assetsPawShop2.0"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PawShop"
+	}
+}
