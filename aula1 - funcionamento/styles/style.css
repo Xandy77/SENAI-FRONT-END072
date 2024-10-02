@@ -1,0 +1,10 @@
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.101)!important;
+}
+
+#carrosel .carousel-item img {
+    height: 500px 400px; /* Altere este valor conforme necessário */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área definida */
+}
+
