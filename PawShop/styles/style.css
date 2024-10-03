@@ -13,11 +13,11 @@ header {
     color: white;
     text-align: center;
 }
-.hero-section h1 {
+.hero-section h3 {
     font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.three-images {
+.four-images {
     display: flex;
     justify-content: center;
     margin-top: -100px;
@@ -63,3 +63,109 @@ header {
 .catalog-item p {
     font-size: 1rem;
 }
+
+/* Estilo do Header */
+header {
+    background-color: #6EB3D0; /* Azul */
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('images/hero-pet.jpg'); /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#6EB3D0; /* Branco */
+    text-align: center;
+}
+
+.hero-section h1 {
+    margin: 40px;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra preta */
+}
+
+/* Seção de Mensagens */
+.message p,
+.form-left p {
+    color: #6EB3D0; /* Azul */
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Seção de Catálogo */
+.catalog-section h2 {
+    font-size: 2rem;
+    color: #F4A623; /* Laranja */
+}
+
+.catalog-item p strong {
+    color: #F4A623; /* Nomes dos produtos em laranja */
+}
+
+/* Estilo dos botões "Ver mais" */
+.btn-pink {
+    background-color: #F7B6D2; /* Rosa */
+    color: #FFFFFF; /* Branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pink:hover {
+    background-color: #6EB3D0; /* Azul quando o mouse passar por cima */
+}
+
+/* Seção de Formulário de Adoção */
+.adoption-form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.form-right {
+    flex: 1;
+}
+
+.btn-submit {
+    background-color: #6EB3D0; /* Azul similar ao header */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-submit:hover {
+    background-color: #F4A623; /* Laranja ao passar o mouse */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Texto adicional */
+section.message p {
+    color: #6EB3D0; /* Azul */
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
+

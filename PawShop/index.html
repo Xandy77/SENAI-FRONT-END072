@@ -44,16 +44,23 @@
         </nav>
     </header>
 
+     <!-- Adicionando a imagem entre o header e a frase -->
+     <section class="hero-image text-center">
+        <img src="images/images/banner/banner.png" alt="Banner principal" class="img-fluid">
+    </section>   
+
     <!-- Seção de destaque com a mensagem -->
     <section class="hero-section">
-        <h1>SEU PET PRECISA DE COMIDA? OU DE UNS PETISCOS?</h1>
+        <h2>SEU PET PRECISA DE COMIDA? OU DE UNS PETISCOS?</h2>
     </section>
 
     <!-- Três fotos sobrepostas com mensagem -->
-    <section class="three-images">
-        <img src="images/pet1.jpg" alt="Pet 1">
-        <img src="images/pet2.jpg" alt="Pet 2">
-        <img src="images/pet3.jpg" alt="Pet 3">
+    <section class="four-images">
+        <img src="images/images/dogsSection/img1.png" alt="Pet 1">
+        <img src="images/images/dogsSection/img2.png" alt="Pet 2">
+        <img src="images/images/dogsSection/img3.png" alt="Pet 3">
+        <img src="images/images/dogsSection/img4.png" alt="Pet 4">
+
     </section>
 
     <section class="message">
@@ -61,40 +68,81 @@
     </section>
 
     <!-- Seção de Catálogo de Produtos -->
-    <section class="catalog-section">
-        <h2>CATÁLOGO DE PRODUTOS</h2>
-        <div class="catalog-items">
-            <!-- Item 1 -->
-            <div class="catalog-item">
-                <img src="images/coleira.jpg" alt="Coleira">
-                <p><strong>COLEIRA</strong></p>
-                <p>A coleira é o acessório essencial para manter o seu companheiro de quatro patas seguro e com estilo. Feita com materiais de alta qualidade, nossa coleira é resistente e confortável para o seu cão.</p>
-            </div>
-            <!-- Item 2 -->
-            <div class="catalog-item">
-                <img src="images/comida.jpg" alt="Comida">
-                <p><strong>COMIDA</strong></p>
-                <p>Ofereça ao seu cão a nutrição de que ele precisa com a nossa seleção de alimentos premium. Nossas opções de comida são formuladas com ingredientes de alta qualidade.</p>
-            </div>
-            <!-- Item 3 -->
-            <div class="catalog-item">
-                <img src="images/disco.jpg" alt="Disco de Brinquedo">
-                <p><strong>DISCO DE BRINQUEDO</strong></p>
-                <p>Mantenha seu cão entretido e ativo com nosso disco de brinquedo, projetado para horas de diversão ao ar livre. Feito de materiais seguros e duráveis.</p>
-            </div>
-            <!-- Item 4 -->
-            <div class="catalog-item">
-                <img src="images/casinha.jpg" alt="Casinha">
-                <p><strong>CASINHA</strong></p>
-                <p>Nossa casinha para cães é um verdadeiro lar dentro de casa. Feita com materiais duráveis e resistentes às intempéries, ela oferece um refúgio seguro e aconchegante.</p>
-            </div>
+<section class="catalog-section">
+    <h2>CATÁLOGO DE PRODUTOS</h2>
+    <div class="catalog-items">
+        <!-- Item 1 -->
+        <div class="catalog-item">
+            <img src="images/images/products/productImage.png" alt="Coleira">
+            <p><strong>COLEIRA</strong></p>
+            <p>A coleira é o acessório essencial para manter o seu companheiro de quatro patas seguro e com estilo. Feita com materiais de alta qualidade, nossa coleira é resistente e confortável para o seu cão.</p>
+            <p><strong>R$ 49,90</strong></p> <!-- Valor do produto -->
+            <button class="btn btn-pink">Ver mais</button> <!-- Botão "Ver mais" -->
         </div>
-    </section>
+        <!-- Item 2 -->
+        <div class="catalog-item">
+            <img src="images/images/products/productImage2.png" alt="Comida">
+            <p><strong>COMIDA</strong></p>
+            <p>Ofereça ao seu cão a nutrição de que ele precisa com a nossa seleção de alimentos premium. Nossas opções de comida são formuladas com ingredientes de alta qualidade.</p>
+            <p><strong>R$ 89,90</strong></p> <!-- Valor do produto -->
+            <button class="btn btn-pink">Ver mais</button> <!-- Botão "Ver mais" -->
+        </div>
+        <!-- Item 3 -->
+        <div class="catalog-item">
+            <img src="images/images/products/productImage3.png" alt="Disco de Brinquedo">
+            <p><strong>DISCO DE BRINQUEDO</strong></p>
+            <p>Mantenha seu cão entretido e ativo com nosso disco de brinquedo, projetado para horas de diversão ao ar livre. Feito de materiais seguros e duráveis.</p>
+            <p><strong>R$ 29,90</strong></p> <!-- Valor do produto -->
+            <button class="btn btn-pink">Ver mais</button> <!-- Botão "Ver mais" -->
+        </div>
+        <!-- Item 4 -->
+        <div class="catalog-item">
+            <img src="images/images/products/productImage4.png" alt="Casinha">
+            <p><strong>CASINHA</strong></p>
+            <p>Nossa casinha para cães é um verdadeiro lar dentro de casa. Feita com materiais duráveis e resistentes às intempéries, ela oferece um refúgio seguro e aconchegante.</p>
+            <p><strong>R$ 199,90</strong></p> <!-- Valor do produto -->
+            <button class="btn btn-pink">Ver mais</button> <!-- Botão "Ver mais" -->
+        </div>
+    </div>
+</section>
 
-    <section class="message">
-        <h2>ADOTE UM PET</h2>
-        <p>Insira aqui as suas informações para que possamos encontrar um amigo para você!</p>
-    </section>
+
+
+
+<section class="adoption-form-section d-flex">
+    <!-- Parte esquerda com o formulário -->
+    <div class="form-left">
+        <p><strong>Insira aqui as suas informações para que possamos encontrar um amigo para você!</strong></p>
+        
+        <!-- Caixa de entrada para o email -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+        </div>
+
+        <!-- Caixa de entrada para o telefone -->
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone:</label>
+            <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+        </div>
+
+        <!-- Checkbox para aceitar notificações -->
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="notificacoes">
+            <label class="form-check-label" for="notificacoes">
+                Aceita receber notificações!
+            </label>
+        </div>
+
+        <!-- Botão de enviar -->
+        <button class="btn btn-submit">ENVIAR</button>
+    </div>
+
+    <!-- Parte direita com a imagem -->
+    <div class="form-right">
+        <img src="images/images/imgBanner.png" alt="Adoção de Pet" class="img-fluid">
+    </div>
+</section>
 
     <!-- Scripts -->
     <script src="scripts/bootstrap.bundle.js"></script>
