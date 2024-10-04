@@ -1,6 +1,6 @@
-header {
+header, footer{
     background-color: #6EB3D0;
-    padding: 20px;
+    padding: 10px;
 }
 .hero-section {
     background-image: url('images/hero-pet.jpg'); /* Substitua pelo caminho correto da sua imagem */
