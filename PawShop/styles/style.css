@@ -20,7 +20,7 @@ header, footer{
 .four-images {
     display: flex;
     justify-content: center;
-    margin-top: -100px;
+
 }
 .three-images img {
     width: 300px;
@@ -72,10 +72,9 @@ header {
 
 /* Hero Section */
 .hero-section {
-    background-image: url('images/hero-pet.jpg'); /* Substitua pelo caminho correto da sua imagem */
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,8 +84,7 @@ header {
 
 .hero-section h1 {
     margin: 40px;
-    font-size: 1.2rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra preta */
+    font-size: 2rem;    
 }
 
 /* Seção de Mensagens */
@@ -166,6 +164,3 @@ section.message p {
     font-size: 1rem;
     text-align: justify;
 }
-
-
-

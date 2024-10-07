@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +8,11 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body>
-
-    <main>
     <header class="text-center">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="../images/images/logo/logoDark.svg" alt=""></i>PawShop
+                    <img src="../images/images/logo/logoDark.svg" alt="">PawShop
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -38,7 +34,7 @@
                             <a class="nav-link" href="contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../PawShop/pages/loja.html">Contato</a>
+                            <a class="nav-link" href="../PawShop/pages/loja.html">Loja</a>
                         </li>
                     </ul>
                 </div>
@@ -46,31 +42,135 @@
         </nav>
     </header>
 
-   
-        
     <main>
-        <section id="catalogo"></section>
+        <!-- Adicionando a imagem entre o header e a frase -->
+     <section class="hero-image text-center">
+        <img src="../images/images/banner/banner.png" alt="Banner principal" class="img-fluid">
+    </section>   
+
+    <!-- Seção de destaque com a mensagem -->
+    <section class="hero-section">
+        <h1>SEU PET PRECISA DE COMIDA? OU DE UNS PETISCOS? VOCÊ ESTÁ NO LUGAR CERTO!</h1>
+    </section>
+
+     <!-- Três fotos sobrepostas com mensagem -->
+     <section class="four-images">
+        <img src="../images/images/dogsSection/img1.png" alt="Pet 1">
+        <img src="../images/images/dogsSection/img2.png" alt="Pet 2">
+        <img src="../images/images/dogsSection/img3.png" alt="Pet 3">
+        <img src="../images/images/dogsSection/img4.png" alt="Pet 4">
+
+    </section>
+
+    <section class="message">
+        <p>Na nossa empresa, sabemos que seu pet é mais do que apenas um animal de estimação; ele é parte da sua família. Por isso, estamos comprometidos em fornecer os melhores cuidados do mercado, garantindo que seu amiguinho peludo receba toda a atenção, carinho e proteção de que ele precisa. A responsabilidade é o nosso lema, e cuidar do seu pet como se fosse o nosso próprio é a nossa missão. Com uma equipe dedicada de profissionais apaixonados por animais, instalações de ponta e uma variedade de serviços que atendem a todas as necessidades do seu pet, estamos aqui para garantir que ele tenha uma vida feliz e saudável. Deixe-nos cuidar do seu pet, para que você possa aproveitar cada momento especial com ele, sabendo que está em mãos seguras e amorosas.</p>
+    </section>
+
+        <h1 class="text-center text-info">LOJINHA DE PETS</h1>
+        <section id="catalogo" class="d-flex flex-wrap justify-content-center my-3 gap-3"></section>
     </main>
 
-
-    <footer class="text-center py-3">
-        <h6>@Todos os Direitos Reservados</h6>
-    </footer>
-
-    <!-- OofCanvas -->
-
+       <!-- OffCanvas -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="carrinho" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrinho</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-            <div id="carrinhoLista"></div>            
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div id="carrinhoLista" class="container-fluid"></div>
+            <div id="carrinhoInfo" class="d-flex justify-content-between container-fluid">
+                <div id="valorTotal">R$ 0.00</div>
+                <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#pagamentoModal">
+                    PAGAR
+                </button>
+            </div>
         </div>
     </div>
 
+    <section class="adoption-form-section d-flex">
+       
+        <!-- Parte esquerda com o formulário -->
+        <div class="form-left">
+            <h1 class="text-center text-info">ADOTE UM PET</h1>
+            <p><strong>Insira aqui as suas informações para que possamos encontrar um amigo para você!</strong></p>
+            
+            <!-- Caixa de entrada para o email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+    
+            <!-- Caixa de entrada para o telefone -->
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+    
+            <!-- Checkbox para aceitar notificações -->
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="notificacoes">
+                <label class="form-check-label" for="notificacoes">
+                    Aceita receber notificações!
+                </label>
+            </div>
+    
+            <!-- Botão de enviar -->
+            <button class="btn btn-submit">ENVIAR</button>
+        </div>
+    
+        <!-- Parte direita com a imagem -->
+        <div class="form-right">
+            <img src="../images/images/imgBanner.png" alt="Adoção de Pet" class="img-fluid">
+        </div>
+    </section>
 
 
+    <footer class="text-center py-3">
+        <h6>@Todos os Direitos Reservados @PawShop - 2024</h6>
+    </footer>
+    
+
+    <!-- Modal de Pagamento -->
+    <div class="modal fade" id="pagamentoModal" tabindex="-1" aria-labelledby="pagamentoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pagamentoModalLabel">Pagamento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formPagamento">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="endereco" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="endereco" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipoPagamento" class="form-label">Tipo de Pagamento</label>
+                            <select id="tipoPagamento" class="form-select" required>
+                                <option value="">Selecione</option>
+                                <option value="cartao">Cartão de Crédito</option>
+                                <option value="boleto">Boleto</option>
+                                <option value="pix">PIX</option>
+                            </select>
+                        </div>
+                        <div class="mb-3" id="infoCartao" style="display: none;">
+                            <label for="numeroCartao" class="form-label">Número do Cartão</label>
+                            <input type="text" class="form-control" id="numeroCartao">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Finalizar Pagamento</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="../scripts/bootstrap.bundle.js"></script>
     <script src="../scripts/script.js"></script>
